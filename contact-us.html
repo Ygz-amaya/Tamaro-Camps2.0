@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--codingflicks.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>Creative Gradient Button Hover Animation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<header>
+    <h2 class="logo">Tamaro Camps</h2>
+    <nav class="navigation">
+        <a href="index1.html">Home</a>
+        <a href="index1.html">About</a>
+        <a href="index.html">Service</a>
+        <a href="login.html">Log in</a>
+        <a href="contact-us.html" class="active">contact-us</a>
+    </nav>
+</header>
+<section class="parallax">
+    <img src="hill1.png" id="hill1">
+    <img src="hill2.png" id="hill2">
+    <img src="hill3.png" id="hill3">
+    <img src="hill4.png" id="hill4">
+    <img src="hill5.png" id="hill5">
+    <img src="tree.png" id="tree">
+    <h2 id="text"> <div class="wrapper">
+        <a href="https://www.bing.com/ck/a?!&&p=ee58e633580d0aa0JmltdHM9MTY4OTM3OTIwMCZpZ3VpZD0xOWU0NjY4MC1lNTgyLTYyOTQtMzMwMS03NWJjZTQwNTYzYjMmaW5zaWQ9NTE4NQ&ptn=3&hsh=3&fclid=19e46680-e582-6294-3301-75bce40563b3&psq=troutandcoffee+facebook+page&u=a1aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3Ryb3V0YW5kY29mZmVlLw&ntb=1">Facebook</a>
+        <a href="https://www.bing.com/ck/a?!&&p=a986d7f523337b22JmltdHM9MTY4OTM3OTIwMCZpZ3VpZD0xOWU0NjY4MC1lNTgyLTYyOTQtMzMwMS03NWJjZTQwNTYzYjMmaW5zaWQ9NTE5MQ&ptn=3&hsh=3&fclid=19e46680-e582-6294-3301-75bce40563b3&psq=troutandcoffee+twitter+page&u=a1aHR0cHM6Ly93d3cueW91dHViZS5jb20vYy9Ucm91dGFuZENvZmZlZQ&ntb=1">Youtube</a>
+        <a href="https://www.instagram.com/troutandcoffee/#">Instagram</a>
+        <a href="https://www.bing.com/ck/a?!&&p=482becee2e671948JmltdHM9MTY4OTM3OTIwMCZpZ3VpZD0xOWU0NjY4MC1lNTgyLTYyOTQtMzMwMS03NWJjZTQwNTYzYjMmaW5zaWQ9NTE3Mw&ptn=3&hsh=3&fclid=19e46680-e582-6294-3301-75bce40563b3&psq=troutandcoffee+&u=a1aHR0cHM6Ly93d3cudHJvdXRhbmRjb2ZmZWUuY29tLw&ntb=1">Website</a>
+    </div></h2>
+    <img src="plant.png" id="plant">
+    <img src="leaf.png" id="leaf">
+</section>
+<body>
+    <style>
+          
+          *{
+    margin: 0;
+    padding: 0;
+          }
+.wrapper a {
+	position: relative;
+    font-size: 20px;
+	box-sizing: border-box;
+	background: linear-gradient(45deg,violet,orange, brown);
+	background-size: 500%;
+	border-radius: 50px;
+	z-index: 1;
+	padding: 15px 30px;
+	margin: 0 15px;
+	font-weight: 500;
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	text-decoration: none;
+	line-height: 60px;
+	color: #fff;	
+}
+ 
+.wrapper a:before{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(45deg, red, green, blue, yellow);
+  background-size: 500%;
+  border-radius: 50px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.wrapper a:hover{
+  color: #fff;
+  text-decoration: none;
+  animation: animate 10s linear infinite;
+}
+ 
+.wrapper a:hover:before{
+  opacity: 1;
+  animation: animate 10s linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0%;
+  }
+  100%
+  {
+    background-position: 500%;
+  }
+}
+
+    </style>
+</body>
+</html>

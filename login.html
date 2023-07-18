@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--www.codingflicks.com--> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LOG IN </title>
+	<link href="style2.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h2 class="logo">Tamaro Camps</h2>
+    <nav class="navigation">
+        <a href="index1.html">Home</a>
+        <a href="index1.html">About</a>
+        <a href="index.html">Service</a>
+        <a href="login.html"class="active">Log in</a>
+		<a href="contact-us.html">contact-us<a>
+    </nav>
+</header>
+<section class="parallax">
+  <img src="hill1.png" id="hill1">
+  <img src="hill2.png" id="hill2">
+  <img src="hill3.png" id="hill3">
+  <img src="hill4.png" id="hill4">
+  <img src="hill5.png" id="hill5">
+  <img src="tree.png" id="tree">
+  <h2 id="form-box">
+    <div class="form-box">
+		<div class="header-text">Login
+		</div><input placeholder="Your Email Address" type="text"> <input placeholder="Your Password" type="password"> <input id="terms" type="checkbox"> <label for="terms"></label><span>Agree with<a href="#">Terms & Conditions</a></span> <button>login</button>
+	 </div>
+   </h2>
+  <img src="plant.png" id="plant">
+  <img src="leaf.png" id="leaf">
+</section>
+
+<style>* {
+	box-sizing: border-box;
+}
+body {
+	font-family: poppins;
+	font-size: 16px;
+	color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.form-box {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: auto auto;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 500px;
+	height: 430px;
+}
+
+.form-box .header-text {
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.form-box input {
+	margin: 10px 0px;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+	font-family: poppins;
+}
+.form-box input[type=checkbox] {
+	display: none;
+}
+.form-box label {
+	position: relative;
+	margin-left: 5px;
+	margin-right: 10px;
+	top: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.form-box label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #ddd;
+}
+.form-box input[type=checkbox]:checked+label:before {
+	content: "\2713";
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	line-height: 20px;
+}
+.form-box span {
+	font-size: 14px;
+}
+.form-box button {
+	background-color: deepskyblue;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0px;
+}
+span a {
+	color: #BBB;
+}
+</style>
+<script src="app2.js"></script>
+</body>
+</html>
